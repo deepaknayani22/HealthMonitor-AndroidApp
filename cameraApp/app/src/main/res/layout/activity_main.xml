@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf2e9"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_ui"
+        android:backgroundTint="#e67e22"
+        android:fontFamily="sans-serif-black"
+        android:padding="16dp"
+        android:text="Check your vitals!"
+        android:textAlignment="center"
+
+
+        android:textColor="#C6333333"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="[CSE 535] Mobile Computing Project-1"
+        android:textColor="#000"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#e67e22"
+        android:fontFamily="@font/rubik_bold_italic"
+        android:paddingHorizontal="100dp"
+        android:text="Continue"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:cornerRadius="15dp" />
+
+
+</RelativeLayout>

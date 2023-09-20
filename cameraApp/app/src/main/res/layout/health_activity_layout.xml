@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf2e9"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/buttonsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="40dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="0.75"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/heartRateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#e67e22"
+                android:fontFamily="@font/rubik_bold_italic"
+                android:onClick="recordVideo"
+                android:text="Measure Heart Rate"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:cornerRadius="20dp" />
+
+
+            <Button
+                android:id="@+id/respBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#e67e22"
+                android:fontFamily="@font/rubik_bold_italic"
+                android:text="Measure Respiratory Rate"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/symptomsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#e67e22"
+            android:fontFamily="@font/rubik_bold_italic"
+            android:text="Add more symptoms"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="600"
+            android:textSize="22sp"
+            android:onClick="openSymptomsActivity"
+            />
+
+        <!--        <VideoView-->
+        <!--            android:id="@+id/videoView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_weight="2" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/HRtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/rubik_bold"
+
+        android:paddingVertical="16dp"
+        android:text="Heart Rate : "
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/HRValText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/HRtext"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/HRtext"
+        android:fontFamily="@font/rubik_medium"
+        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:text=" - "
+        android:textColor="#000"
+        android:textFontWeight="600"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Resptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/HRtext"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/rubik_bold"
+        android:paddingVertical="16dp"
+        android:text="Respiratory Rate : "
+        android:textColor="#000"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"/>
+
+
+    <TextView
+        android:id="@+id/RespValText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/Resptext"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/Resptext"
+        android:fontFamily="@font/rubik_medium"
+        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:text=" - "
+        android:textColor="#000"
+        android:textFontWeight="600"
+        android:textSize="16sp" />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf2e9"
+    android:padding="16dp"
+    android:fontFamily="@font/rubik_bold_italic">
+
+    <!-- Dropdown for symptoms -->
+    <Spinner
+        android:id="@+id/spinnerSymptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="22dp"
+        />
+
+    <!-- 5 star rating bar -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerSymptoms"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="1"
+        android:layout_marginTop="20dp"
+        android:progressTint="#e67e22"
+        />
+
+    <!-- Submit button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="600"
+        android:textSize="22sp"
+        android:backgroundTint="#e67e22"
+        android:fontFamily="@font/rubik_bold_italic"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
