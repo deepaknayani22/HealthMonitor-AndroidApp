@@ -18,4 +18,4 @@ Follow these steps to set up and run the HealthMonitor Android app:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/HealthMonitor-AndroidApp.git
+   git clone https://github.com/deepaknayani22/HealthMonitor-AndroidApp.git
